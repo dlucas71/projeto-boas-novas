@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+      <div class="row"> <!-- conteudo linha 1 -->
+
+        <div class="col-lg-3">
+          <div class="panel panel-info">
+              <div class="panel-heading cabdia">O que tem pra Hoje</div>
+              <div class="panel-body" id="menulist">
+                  <div class="list-group" >
+                      <a href="#" class="list-group-item">
+                          <span class="glyphicon glyphicon-list icone_menu_prahoje" aria-hidden="true"></span>
+                          Biografias </a>
+                      <a href="{% url 'artigo' %}" class="list-group-item">
+                          <span class="glyphicon glyphicon-align-left icone_menu_prahoje" aria-hidden="true"></span>
+                          Artigo </a>
+                      <a href="#" class="list-group-item">
+                          <span class="glyphicon glyphicon-download-alt icone_menu_prahoje" aria-hidden="true"></span>
+                          Arquivos </a>
+                      <a href="#" class="list-group-item">
+                          <span class="glyphicon glyphicon-bookmark icone_menu_prahoje" aria-hidden="true"></span>
+                          Eventos </a>
+                      <a href="#" class="list-group-item">
+                          <span class="glyphicon glyphicon-bullhorn icone_menu_prahoje" aria-hidden="true"></span>
+                          Palestras </a>
+                      <a href="#" class="list-group-item">
+                          <span class="glyphicon glyphicon-film icone_menu_prahoje" aria-hidden="true"></span>
+                          Videos </a>
+                      <a href="#" class="list-group-item">
+                          <span class="glyphicon glyphicon-book icone_menu_prahoje" aria-hidden="true"></span>
+                          Livros </a>
+                  </div>
+              </div>
+              <!-- <div class="panel-footer">Atividades do dia</div> -->
+          </div>
+        </div> <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="{% static 'imgs/b1.jpg' %}" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid imgSlide" src="{% static 'imgs/b2.png' %}" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block img-fluid" src="{% static 'imgs/b3.jpg' %}" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div><!-- fim div class col-lg-9 -->
+    </div><!-- fim da linha 1 banner e  menu lateral -->
+
+
+
+<!-- linha 2  -->
+<div class="row">
+  <div class="col-lg-3">
+    <div class="panel panel-success">
+        <div class="panel-heading cont_site">Conteúdo do Site</div>
+        <div class="panel-body" id="menulist_site">
+            <div class="list-group list_site">
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-list icone_menu_conteudo" aria-hidden="true"></span>
+                Biografias </a>
+            <a href="{% url 'lista_artigos' %}" class="list-group-item">
+                <span class="glyphicon glyphicon-align-left icone_menu_conteudo" aria-hidden="true"></span>
+                Artigos </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-download-alt icone_menu_conteudo" aria-hidden="true"></span>
+                Arquivos </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-bookmark icone_menu_conteudo" aria-hidden="true"></span>
+                Eventos </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-bullhorn icone_menu_conteudo" aria-hidden="true"></span>
+                Palestras </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-film icone_menu_conteudo" aria-hidden="true"></span>
+                Videos </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-book icone_menu_conteudo" aria-hidden="true"></span>
+                Livros </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-headphones icone_menu_prahoje" aria-hidden="true"></span>
+                Audio </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-map-marker icone_menu_conteudo" aria-hidden="true"></span>
+                Estamos aqui </a>
+            <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-tower icone_menu_conteudo" aria-hidden="true"></span>
+                Jogos </a>
+        </div>
+        </div>
+        <!-- <div class="panel-footer">Atividades do dia</div> -->
+    </div>
+
+  </div>
+  <!-- /.col-lg-3 -->
+<div class="col-lg-9">
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <a href="#"><img class="card-img-top" src="{% static 'imgs/cx350.jpg' %}" alt=""></a>
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="#">Chico Xavier</a>
+      </h4>
+      <h5>Um Pouco de História</h5>
+      <p class="card-text">Considerado um dos maiores médiuns da história,
+ 						dedicando-se particularmente à psicografia. Ele nasceu em Pedro Leopoldo,
+ 						no estado de Minas Gerais, a 2 de abril de 1910. Foi o mais famoso difusor
+ 						do Espiritismo em nosso país, pois lançou mais de quatrocentos livros sobre
+ 						a Doutrina, psicografando vários espíritos, principalmente André Luiz e Emmanuel.
+ 						</p>
+    </div>
+    <div class="card-footer">
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <a href="#"><img class="card-img-top" src="{% static 'imgs/bz350.jpg' %}" alt=""></a>
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="#"> Bezerra de Menezes</a>
+      </h4>
+      <h5>Um Pouco de História</h5>
+      <p class="card-text">
+          Adolfo Bezerra de Menezes Cavalcanti, mais conhecido
+          apenas como Bezerra de Menezes, foi um médico, militar, escritor, jornalista,
+          político, filantropo e expoente da Doutrina Espírita. Conhecido também como O Médico dos Pobres.</p>
+      <p>
+         Em termos de importância, Bezerra esta para p século XIX como Chico para o XXI.
+     </p>
+    </div>
+    <div class="card-footer">
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card h-100">
+    <a href="#"><img class="card-img-top" src="{% static 'imgs/va350.jpg' %}" alt=""></a>
+    <div class="card-body">
+      <h4 class="card-title">
+        <a href="#">Viagem Astral</a>
+      </h4>
+      <h5>Técnicas e preparo</h5>
+     <p class="card-text">A projeção astral é uma experiência extracorpórea
+         em que o corpo astral sai do campo físico e viaja pelo plano astral.
+         As pessoas costumam passar por essa experiência quando estão doentes ou
+         em situações de proximidade com a morte, mas também é possível fazê-la
+         por vontade própria. Este artigo traz instruções sobre como começar.!
+     </p>
+    </div>
+    <div class="card-footer">
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
+
+</div>
+</div><!-- fim linha 2  -->
+
+
+        <div class="row"><!-- linha 3 com 3 colunas do dia -->
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="{% url 'artigo' %}"><img class="card-img-top" src="{% static 'imgs/me.jpg' %}" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="{% url 'artigo' %}">Artigo do Dia</a>
+                  </h4>
+                  <h5>Maturidade Espiritual</h5>
+                  <p class="card-text">É quando conseguimos ter discernimento para nos calar,
+                      quando passamos a pedir pelo próximo, é quando assumimos nossas responsabilidades.!</p>
+                </div>
+                <div class="card-footer">
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'imgs/le.jpg' %}" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Livro dos Espiritos</a>
+                  </h4>
+                  <h5>Questao do Dia - 26 </h5>
+                  <p class="card-text"> Poder-se-á conceber o espírito sem a matéria e a matéria sem o espírito?.</p>
+                  <p class="card-text">“Pode-se, é fora de dúvida, pelo pensamento.” </p>
+                </div>
+                <div class="card-footer">
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="#"><img class="card-img-top" src="{% static 'imgs/lm2.jpg' %}" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="#">Livro dos Médiuns</a>
+                  </h4>
+                  <h5>Questão do Dia 16</h5>
+                  <p class="card-text">Por que permite Deus que maus Espíritos se comuniquem e digam coisas ruins?</p>
+                  <p class="card-text">"Ainda mesmo no que haja de pior, um ensinamento sempre se colhe.
+                      Toca-vos saber colhê-lo. Mister se faz que haja comunicações de
+                      todas as espécies, para que aprendais a distinguir os bons Espíritos
+                      dos maus e para que vos sirvam de espelho a vós mesmos."</p>
+                </div>
+                <div class="card-footer">
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star star_solid" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.row -->
+
+        </div><!-- /.col-lg-9 -->
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+{% endblock %}

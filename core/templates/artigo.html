@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="row row_artigo">
+   <div class="col-md-6 txtArtigo">
+       <h3>
+           Maturidade Espiritual
+       </h3>
+       <p class="card-text-artigo">
+           Lembremo-nos de que o homem interior se renova sempre. A luta enriquece-o de experiência,
+           a dor aprimora-lhe as emoções e o sacrifício tempera-lhe o caráter. O Espírito encarnado
+           sofre constantes transformações por fora, a fim de acrisolar-se e engrandecer-se por dentro.
+       </p>
+       <p class="card-text-artigo">
+           É quando você passa a ser mais seletivo (a) internamente, é quando você
+            sabe que pode contar com poucos, mas que são essenciais e
+            que mantém uma boa relação de amizade e empatia sem exigir
+            nada em troca.
+            É quando você olha mais à volta e se coloca no lugar das
+            pessoas e não mensura a sua dor, assim como não quer que
+            mensurem as suas. É quando você não interfere nas escolhas
+            de ninguém e vai aprendendo a digerir os embates da vida
+            com mais nitidez e resiliência.
+            É quando você percebe que não precisa ter a casa cheia,
+            não precisa de tanto barulho, que estar a sós é como
+            ir se retratando diante do que se sente, do que
+            sentiu ou do que não quer mais sentir.
+       </p>
+   </div>
+   <div class="col-md-6 img_artigo">
+       <img src="{% static 'imgs/Maturidade.jpg' %}" alt=""/>
+   </div>
+</div>
+<div class="row row_artigo">
+   <div class="col-md-6 img_artigo">
+       <img src="{% static 'imgs/ev.jpg' %}" alt=""  class="img-rounded"/>
+   </div>
+   <div class="col-md-6">
+       <h3>
+           Autoconhecimento
+       </h3>
+       <p>
+          Muito se discute sobre as estratégias para alcançar sucesso profissional e
+          pessoal e evoluir continuamente. Entretanto, para chegar ao equilíbrio
+          nestes quesitos é preciso passar por um processo interno e, antes de tudo,
+          conhecer a si mesmo. O processo de autoconhecimento é vital para evoluir em todas
+          as esferas possíveis, sendo uma das principais ferramentas para atingir o sucesso,
+          tanto profissionalmente quanto pessoalmente.
+       </p>
+   </div>
+</div>
+{% endblock content %}

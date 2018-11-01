@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="aboutus-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="aboutus">
+                        <h2 class="aboutus-title">Sobre Eder Magalhães</h2>
+                        <p class="aboutus-text">Mostrar gratidão por todas as coisas boas que nos acontecem é
+                            a atividade mais poderosa para quem quer aumentar sua felicidade. E por razões simples:
+                            ser grato vai deixar você mais feliz, melhorar seu relacionamento com os outros, torná-lo
+                            uma pessoa melhor e, de quebra, deixar a vida de todos que te rodeiam muito melhor.</p>
+                        <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
+                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                        <a class="aboutus-more" href="#">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="aboutus-banner">
+                        <img src="{% static 'imgs/freud3.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="feature">
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Formação</h4>
+                                    <p>Os pais somente podem dar bons conselhos e indicar bons caminhos, mas a formação
+                                        final do caráter de uma pessoa está em suas próprias mãos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Artigos</h4>
+                                    <p>Não adianta tentar se esconder entre essas publicações
+                                        positivas demonstrando um equilíbrio emocional na sua vida.
+                                        quando se trata de emoções reais, ninguém é forte como pretende demonstrar.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="clearfix">
+                                <div class="iconset">
+                                    <span class="glyphicon glyphicon-cog icon"></span>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Eventos</h4>
+                                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
