@@ -1,0 +1,68 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 0px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0px;
+  }
+}
+.cabdia{
+    text-align: center;
+}
+#menulist :hover{
+    background-color: orange;
+}
+.list-group a{
+    background-color: #ADD8E6;
+    border: 0px;
+}
+.cont_site{
+    text-align: center;
+}
+.list_site a{
+    background-color: #90EE90;
+}
+#menulist_site :hover{
+    background-color: orange;
+}
+.card-text{
+    text-align: justify;
+}
+.card-footer{
+    background-color: blue;
+    color: yellow;
+}
+.icon_contato{
+    color: green;
+}
+.env_msg{
+    text-align: center;
+}
+.txtArtigo{
+    padding: 30px;
+}
+.card-text-artigo{
+    padding-left: 10px
+}
+.img_artigo{
+    padding-bottom: 10px;
+}
+.row_artigo{
+    padding-left: 10px;
+}
+.rodape{
+    margin-top: 10px;
+}
+.contact-form{
+    padding: 10px;
+}
+.btn_enviar_msg{
+    padding-left: 750px;
+}
